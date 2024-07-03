@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*ウィンドウ背景色設定*/
+body {
+  background-color: #cc9900;
+  background-image: url(img/riceimages.jpg);
+  background-repeat: repeat-x;
+}
+
+/*リンク色設定*/
+a {
+  color: #ffff00;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+  
+/*ヘッダー,ナビ,フッターの共通設定*/
+header,nav,footer {
+    text-align: center;
+  }
+
+/*ページタイトル設定*/
+h1 {
+  margin: 50px auto;
+  padding: 25px;
+  border: 4px solid #cccc66;
+  background-color: #666633;
+  color: #fff;
+  font-size: 220%;
+  text-align: center;
+  line-height: 1;
+  text-shadow: 2px 2px 3px #ffffcc;
+  background-image: linear-gradient(to bottom, #ffffff);
+}
+
+/*大見出し設定*/
+.h {
+ padding: 15px;
+ margin-bottom: 20px;
+ border: 3px dotted #ffff00;
+ border-left: double 12px;
+ color: #ffffcc;
+}
+
+/*コンテンツ枠設定*/
+#contents {
+ margin: 50px;
+ padding: 40px 80px;
+ border: 2px ridge #cc9900;
+ background-color: #cc9966;
+}
+
+/*セクション間隔*/
+#contents > section + section {
+  margin-top: 60px;
+}
+/*ナビ*/
+.menu li {
+  list-style-type: none;
+  display: inline-block;
+  width: 180px;
+  margin: 0 10px;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  background: #cc9966;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu a:hover {
+  background: #666633;
+}
+/*リンクナビ設定*/
+.link {
+  list-style-type: none;
+  display: inline-block;
+  width: 180px;
+  margin: 0 10px;
+}
+/*画像配置設定*/
+.image-container img {
+  display: inline-block;
+  margin: 5px;
+}
+/*テキストサイズ設定*/
+.custom-text {
+  color: crimson;
+  font-size: 20px;
+}
+/*フォントスタイル*/
+.custom-font {
+  font-family: 'Arial Black', sans-serif;
+}
+/*一部フォント変更*/
+.noto-serif-jp {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/*画像*/
+.image-container{
+  display: inline-block;
+  margin: 5px;
+}
+/*リンク位置*/
+.center-vertical {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  height: 100vh; 
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+}

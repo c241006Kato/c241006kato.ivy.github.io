@@ -1,82 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
+<body>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I LOVE CURRY</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
     <header>
-        <div class="titlecontent"></div>
         <h1>素晴らしきカレーの世界　～辛みと旨味の協奏曲（コンチェルト）～</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#about">そもそもカレーってなぁに？</a></li>
                 <li><a href="#recipes">いろいろなレシピ</a></li>
                 <li><a href="#history">カレーの歴史</a></li>
                 <li><a href="#varieties">種類</a></li>
                 <li><a href="#ranking">人気カレーランキング</a></li>
                 <li><a href="#spice">カレーに使われている主なスパイス</a></li>
+                <li><a href="#link">カレーに関するリンク</a></li>
             </ul>
-            <p><a href="http://www.curry.or.jp/whats/">全日本カレー工業協同組合</a></p>
         </nav>
     </header>
-    <main>
+    <main id="contents">
         <section id="about">
-            <h2>そもそもカレーってなぁに？</h2>
-            <img src="img/spice.png">
-            <p>カレーとは、各種スパイスで具材を煮込んだもので、インドのタミール語のソースの意のカリ（Kari）
+            <h2 class="h">そもそもカレーってなぁに？</h2>
+            <img src="img/spice.png" class = "imgR" alt="スパイス画像" ALIGN="left" width="200" height="150">
+            <p class="custom-font">カレーとは、各種スパイスで具材を煮込んだもので、インドのタミール語のソースの意のカリ（Kari）
                から転じたという説や、「おいしいもの」という意味で使われているヒンズー語の「ターカリー」（turcarri）
                から「ターリ」（turri）に転じ、英名になったという説から来ています。</p><p>主にインドを中心とした、熱帯
-               亜熱帯地方でスパイシーな料理を総称して英語で<storong>＜カレー＞</storong>と呼ぶようになったのです。
+               亜熱帯地方でスパイシーな料理を総称して英語で<strong>＜カレー＞</strong>と呼ぶようになったのです。
             </p>
         </section>
         <section id="recipes">
-            <h2>いろいろなレシピ</h2>
-            <ul>
-                <li>カレーライス</li>
-                <li>ハヤシライス</li>
-                <li>カレーうどん</li>
-            </ul>
+            <h2 class="h">いろいろなレシピ</h2>
+            <p class="image-container">
+                ●カレーライス<img src="img/curryrice.jpg" class="imgL" width="275" height="200">
+                ●カレーうどん<img src="img/curryudon.jpg" class="imgR" width="275" height="200">
+                ●焼きカレー<img src="img/bakedcurry.jpg" class="imgR" width="275" height="200">
+            </p>
         </section>
         <section id="history">
-            <h2>カレーの歴史</h2>
-            <p>カレーの起源は...（歴史に関する説明）</p>
+            <h2 class="h">カレーの歴史</h2>
+            <p class="noto-serif-jp">もともとインドは、イギリスの植民地でした。インドで作られていた料理をイギリス本国に持ち帰り、一種の料理として公開しました。
+                インドのカレーはスパイスの分量が決まっておらず、二度と同じ味は作れないと言われていましたが、イギリスに渡って少し後に、
+                C&B社がカレー粉の作成に成功したことで誰でも同じ味が再現できるようになりました。<br>
+                ちなみに、イギリスから日本にカレーがやってきたのは明治の初め（明治４年ごろ）と言われており、牛肉の食べ方の一種として<br>
+                高級料理として広まりました。その後、時代が進むにつれて学校給食で提供されたり、定食屋のメニューとして採用されるなどで大衆化していったそうです。
+                そして、1954年の高度経済成長期に入った時代に、インスタンスと食品の進化によって、固形の<strong>カレールウが誕生しました。</strong><br>
+                その後、80年代に入り、学校給食などでも提供されるなど、世間に広く浸透していきました。<br>このようにして、日本にカレーが広まっていき私たちの身近な食品の一部として
+                大成していきました。
+            </p>
         </section>
         <section id="varieties">
-            <h2>種類</h2>
-            <ul>
-                <li>日本のカレー</li>
-                <li>インドのカレー</li>
-                <li>タイのカレー</li>
-            </ul>
+            <h2 class="h">種類</h2>
+            <p class="noto-serif-jp">
+                ★日本のカレー.......とろみのある濃厚なソースで、ジャガイモや玉ねぎなどが入っている<br>
+                ★インドのカレー.......様々なスパイスを調合して作るため、少し辛みが強い<br>
+                ★タイのカレー.......辛さと甘さが混在した、エスニックな味わい
+            </p>
         </section>
         <section id="spice">
-            <h2>カレーに使われている主なスパイス</h2>
-            <p><small>※この他にもいろんなスパイスがあります。</small></p>
+            <h2 class="h">カレーに使われている主なスパイス</h2>
+            <p class="noto-serif-jp">
+            <small>※この他にもいろんなスパイスがあります。</small>
             <ul>
                 <li>ターメリック</li>
-                <p><small>鮮やかな黄色をカレーに与え、ほろ苦い風味が特徴</small></p>
+                <p class="custom-text"><small>鮮やかな黄色をカレーに与え、ほろ苦い風味が特徴</small></p>
                 <li>クミン</li>
-                <p><small>やや辛い風味があり、種子として使うことも、粉末として使うこともある</small></p>
+                <p class="custom-text"><small>やや辛い風味があり、種子として使うことも、粉末として使うこともある</small></p>
                 <li>コリアンダー</li>
-                <p><small>甘くてほのかに柑橘系の風味があり、カレーに深みを与える</small></p>
+                <p class="custom-text"><small>甘くてほのかに柑橘系の風味があり、カレーに深みを与える</small></p>
                 <li>ガラムマサラ</li>
-                <p><small>複数のスパイスを混ぜ合わせたもので、仕上げに使うことが多い</small></p>
+                <p class="custom-text"><small>複数のスパイスを混ぜ合わせたもので、仕上げに使うことが多い</small></p>
                 <li>カルダモン</li>
-                <p><small>甘くて芳香があり、グリーンカルダモンとブラックカルダモンの2種類がよく使われる</small></p>
+                <p class="custom-text"><small>甘くて芳香があり、グリーンカルダモンとブラックカルダモンの2種類がよく使われる</small></p>
             </ul>
+        </p>
         </section>
         <section id="ranking">
-            <h2>人気カレーランキング</h2>
+            <h2 class="h">人気カレーランキング</h2>
             <ol>
-                <li>カレーライス</li>
-                <li>チキンカレー</li>
+                <li>カレーライス</li> 
+                <img src="img/ginzaracurry.jpeg" class="imgL" width="275" height="200">
+                定番中の定番。誰もが知っている味。誰もが好きなはず。
+                <li>チキンカレー</li> 
+                <img src="img/chikincurry.jpg" class="imgL" width="275" height="200">
+                鶏肉の出汁を使ったカレー。奥深い味わいで、普通のカレーより少し特別感を感じる。
                 <li>ビーフカレー</li>
+                <img src="img/beefcurry.jpg" class="imgL" width="275" height="200">
+                牛肉をメインとした少し高級感のあるカレー。牛肉とカレーの見事なハーモニーが食欲を増進させる。
                 <li>ベジタブルカレー</li>
+                <img src="img/vegetablecurry.jpg" class="imgL" width="275" height="200">
+                野菜好きの方にはたまらないカレー。野菜のうまみがしっかり入った素晴らしいカレー。
                 <li>シーフードカレー</li>
+                <img src="img/seafood.jpg" class="imgL" width="275" height="200">
+                海の幸とカレーの奇跡のコラボレーション。魚介特有のうまみが凝縮された至高のカレー。
             </ol>
+        </section>
+        <section id ="link">
+            <h2 class="h">リンク集</h2>
+            <div class="center">
+            <a href="http://www.curry.or.jp/whats/" target="_blank" title="visit curry association"><p>全日本カレー工業協同組合</p></a>
+            <a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AC%E3%83%BC" target="_blank" title="curry wiki"><p>カレー(wikipedia)</p></a>
+            <a href="https://www.curryhouse-ueno.com/" target="blank" title="oita-curryhouse-ueno"><p>カレーハウスうえの</p></a>
+            <a href="https://www.ichibanya.co.jp/" target="blank" title="coco-ichibanya"><p>ＣＯＣＯ壱番屋</p></a>
+        </div>
         </section>
     </main>
     <footer>
